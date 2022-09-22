@@ -15,7 +15,7 @@ const Home = () => {
             />
         </div>
         <div className="text-center mt-5">
-        <Button variant="outline-light" onClick={() => navigate("/articles")}>See more</Button>
+        <Button variant="outline-light" onClick={() => navigate("/articles")}>Come to check some space news!</Button>
         </div>
       </div>
       )

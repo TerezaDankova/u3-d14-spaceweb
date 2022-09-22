@@ -1,3 +1,5 @@
 export interface News {
-      imageUrl: string; 
+      title: string;
+      imageUrl: string;
+      id?: number;
     }

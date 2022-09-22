@@ -5,8 +5,8 @@ import Home from './components/Home';
 import GetArticles from './components/GetArticles';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ArticleDetails from './components/ArticleDetails';
+import MyFooter from './components/MyFooter';
 
- 
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
               <Route path="/articles" element={<GetArticles />} />
               <Route path="/ArticleDetails/:articleID" element={<ArticleDetails />} />
             </Routes> 
+        <MyFooter/>
         </div>
     </BrowserRouter>
   );

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SingleArticle from "./SingleArticle";
 
+
+
 const GetArticles = () => {
 
 const [articles, setArticles] = useState([]);
@@ -25,8 +27,8 @@ const fetchArticles = async () => {
       return (
             <Container>
               <Row>
-                    {articles.map((article, i) => (
-                  <Col key={i}>
+                  {articles.slice(0, 8).map((article, i) => (
+                  <Col md={6} key={i}>
                         <SingleArticle news={article} />
                   </Col>
                     ))}
