@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SingleArticle from "./SingleArticle";
-
+import { News } from "../types/News";
 
 
 const GetArticles = () => {
 
-const [articles, setArticles] = useState([]);
+const [articles, setArticles] = useState <News[]>([])
 
 useEffect(() => {
       fetchArticles()
@@ -27,8 +27,8 @@ const fetchArticles = async () => {
       return (
             <Container>
               <Row>
-                  {articles.slice(0, 8).map((article, i) => (
-                  <Col md={6} key={i}>
+                  {articles.map((article, index) => (
+                  <Col md={6} key={index}>
                         <SingleArticle news={article} />
                   </Col>
                     ))}
