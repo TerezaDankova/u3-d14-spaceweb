@@ -1,0 +1,26 @@
+Today you’ll create a Spaceflight news website using TypeScript.
+Fulfill the requirements and try to implement as best as you can typings and interfaces.
+
+? API Docs:
+You can find the full docs here –> LINK
+
+The endpoint for retrieving the list of articles looks like this:
+
+https://api.spaceflightnewsapi.net/v3/articles
+Use the id property of any resulting track to fetch detail information with
+
+https://api.spaceflightnewsapi.net/v3/articles/:id
+ 
+
+TASKS:
+Implement a nice main page for displaying the articles from the API; every article should be displayed from a component and should show details like the title, the publishing date, a cover image etc.
+Clicking on any article should bring the user on a detail page, which will fetch the data for that particular article. Show on this detail page every piece of information you can retrieve from the element.
+ 
+
+HINTS:
+
+As usual split your application in many reusable components
+Implement props & state interfaces for each one of them if needed
+Implement an interface also for the API result
+Skip the Redux approach and fetch data directly in your components and store them in local states (we didn’t had the chance to talk about Redux in TypeScript, if you’re interested a Coding Pill is available!)
+
